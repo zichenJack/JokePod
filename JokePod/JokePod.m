@@ -14,6 +14,7 @@
 
 CHDeclareClass(EssayTipCellImage)
 CHDeclareClass(EssayDetailTipCellViewImage)
+CHDeclareClass(EssayRecommendActivityCell)
 
 CHMethod2(double, EssayTipCellImage, heightForTipModel, id, arg1, cellWidth, double, arg2)
 {
@@ -39,8 +40,32 @@ CHMethod3(double, EssayDetailTipCellViewImage, heightForContentOfTipModel, id, a
     return 0.0;
 }
 
-//参数的个数，返回值的类型，类的名称，selector的名称，selector的类型，selector对应的参数的变量名
+CHMethod1(id, EssayRecommendActivityCell, getSummaryParagraphStyleDic, id, arg1){
 
+    return nil;
+}
+
+CHMethod1(double, EssayRecommendActivityCell, summeryHeightWithActivitySummery, id, arg1){
+
+    return 0;
+}
+
+CHMethod1(double, EssayRecommendActivityCell, imageHeightWithRecommendActivityModel, id, arg1){
+
+    return 0;
+}
+
+CHMethod1(double, EssayRecommendActivityCell, heightWithRecommendActivityModel, id, arg1){
+
+    return 0;
+}
+
+CHMethod2(id, EssayRecommendActivityCell, initWithStyle, id, arg1, reuseIdentifier, double, arg2)
+{
+    return nil;
+}
+
+//参数的个数，返回值的类型，类的名称，selector的名称，selector的类型，selector对应的参数的变量名
 CHConstructor
 {
     @autoreleasepool
@@ -52,21 +77,10 @@ CHConstructor
         CHClassHook2(EssayDetailTipCellViewImage, initWithStyle, reuseIdentifier);
         CHClassHook2(EssayDetailTipCellViewImage, heightForTipModel, cellWidth);
         CHClassHook3(EssayDetailTipCellViewImage, heightForContentOfTipModel, cellWidth, fontSize);
+
+        CHClassHook1(EssayRecommendActivityCell, getSummaryParagraphStyleDic);
+        CHClassHook1(EssayRecommendActivityCell, summeryHeightWithActivitySummery);
+        CHClassHook1(EssayRecommendActivityCell, imageHeightWithRecommendActivityModel);
+        CHClassHook1(EssayRecommendActivityCell, heightWithRecommendActivityModel);
     }
 }
-
-
-
-
-/**
-
- %hook EssayDetailTipCellViewImage
-
-
- + (double)heightForContentOfTipModel:(id)arg1 cellWidth:(double)arg2 fontSize:(double)arg3
- {
- return 0;
- }
-
- %end
- */

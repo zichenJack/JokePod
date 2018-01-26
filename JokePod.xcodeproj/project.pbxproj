@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		CA5D0746201AF1A10076D653 /* JokePod.m in Sources */ = {isa = PBXBuildFile; fileRef = CA5D0745201AF1A10076D653 /* JokePod.m */; };
-		CA5D0748201AF1A10076D653 /* JokePod.podspec in Resources */ = {isa = PBXBuildFile; fileRef = CA5D0747201AF1A10076D653 /* JokePod.podspec */; };
 		CA5D074A201AF1A10076D653 /* JokePod.h in Headers */ = {isa = PBXBuildFile; fileRef = CA5D0744201AF1A10076D653 /* JokePod.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -16,7 +15,6 @@
 		CA5D0741201AF1A10076D653 /* JokePod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JokePod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA5D0744201AF1A10076D653 /* JokePod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JokePod.h; sourceTree = "<group>"; };
 		CA5D0745201AF1A10076D653 /* JokePod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JokePod.m; sourceTree = "<group>"; };
-		CA5D0747201AF1A10076D653 /* JokePod.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = JokePod.podspec; sourceTree = "<group>"; };
 		CA5D0749201AF1A10076D653 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -52,7 +50,6 @@
 			children = (
 				CA5D0744201AF1A10076D653 /* JokePod.h */,
 				CA5D0745201AF1A10076D653 /* JokePod.m */,
-				CA5D0747201AF1A10076D653 /* JokePod.podspec */,
 				CA5D0749201AF1A10076D653 /* Info.plist */,
 			);
 			path = JokePod;
@@ -127,7 +124,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA5D0748201AF1A10076D653 /* JokePod.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
